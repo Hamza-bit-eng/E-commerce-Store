@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Store - Shopping Cart</title>
+    <link rel="stylesheet" href="../CSS/Cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link rel="icon" type="image/png" href="../Photo/logo-Nike-New.png">
+</head>
+<body>
+    <div class="cart-container">
+        <header class="cart-header">
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                <i class="fas fa-arrow-left"></i> Continue Shopping
+            </button>
+            <h1>Your Cart <span id="cart-count">(0)</span></h1>
+        </header>
+
+        <div class="cart-content">
+            <div class="cart-items-section">
+                <div id="cart-items">
+                    <!-- Cart items will be dynamically inserted here -->
+                </div>
+                
+                <div id="empty-cart" class="empty-cart-message">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h2>Your cart is empty</h2>
+                    <p>Add items from the home page to get started</p>
+                    <button class="btn-shop-now" onclick="window.location.href='../index.html'">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">L.E 0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span id="shipping">FREE</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (8%)</span>
+                        <span id="tax">L.E 0.00</span>
+                    </div>
+                    <hr>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="total">L.E 0.00</span>
+                    </div>
+                </div>
+                
+                <div class="promo-code">
+                    <input type="text" id="promo-input" placeholder="Enter promo code">
+                    <button id="apply-promo">Apply</button>
+                </div>
+                
+                <button class="btn-checkout" id="checkout-btn" disabled>
+                    Proceed to Checkout
+                </button>
+                
+                <div class="security-info">
+                    <i class="fas fa-lock"></i>
+                    <span>Secure Checkout</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Js/Cart.js"></script>
+</body>
+</html>

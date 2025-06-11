@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Store - Sign Up</title>
+    <link rel="stylesheet" href="../CSS/SignIn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="../Photo/logo-Nike-New.png">
+</head>
+<body>
+    <div class="signup-container">
+        <!-- Left Side - Form -->
+        <div class="signup-form-section">
+            <div class="form-container">
+                <!-- Progress Bar -->
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+
+                <!-- Header -->
+                <div class="form-header">
+                    <img src="/Photo/Logo_NIKE.svg.png" alt="Nike" class="nike-logo">
+                    <h2>Become a Nike Member</h2>
+                    <p>Create your account and unlock exclusive benefits</p>
+                </div>
+
+                <!-- Message Container -->
+                <div id="message-container"></div>
+
+                <!-- Sign Up Form -->
+                <form id="signupForm" class="signup-form">
+                    <!-- Step 1: Personal Info -->
+                    <div class="form-step active" id="step1">
+                        <h3 class="step-title">Personal Information</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user"></i>
+                                    <input 
+                                        type="text" 
+                                        id="firstName" 
+                                        name="firstName" 
+                                        placeholder="Enter first name"
+                                        required
+                                    >
+                                </div>
+                                <span class="error-message" id="firstName-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user"></i>
+                                    <input 
+                                        type="text" 
+                                        id="lastName" 
+                                        name="lastName" 
+                                        placeholder="Enter last name"
+                                        required
+                                    >
+                                </div>
+                                <span class="error-message" id="lastName-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="Enter email address"
+                                    required
+                                >
+                            </div>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-lock"></i>
+                                <input 
+                                    type="password" 
+                                    id="password" 
+                                    name="password" 
+                                    placeholder="Create password"
+                                    required
+                                >
+                                <button type="button" class="password-toggle" id="togglePassword">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                            <div class="password-strength" id="passwordStrength">
+                                <div class="strength-bar">
+                                    <div class="strength-fill" id="strengthFill"></div>
+                                </div>
+                                <span class="strength-text" id="strengthText">Password strength</span>
+                            </div>
+                            <span class="error-message" id="password-error"></span>
+                        </div>
+
+                        <button type="button" class="btn-next" onclick="nextStep()">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Step 2: Additional Info -->
+                    <div class="form-step" id="step2">
+                        <h3 class="step-title">Additional Information</h3>
+
+                        <div class="form-group">
+                            <label for="birthdate">Date of Birth</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-calendar"></i>
+                                <input 
+                                    type="date" 
+                                    id="birthdate" 
+                                    name="birthdate"
+                                    required
+                                >
+                            </div>
+                            <small class="form-hint">Get a Nike Member Reward every year on your Birthday</small>
+                            <span class="error-message" id="birthdate-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country">Country/Region</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-globe"></i>
+                                <select id="country" name="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="EG">Egypt</option>
+                                    <option value="US">United States</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="FR">France</option>
+                                    <option value="JP">Japan</option>
+                                </select>
+                            </div>
+                            <span class="error-message" id="country-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div class="gender-options">
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="male" required>
+                                    <span class="radio-custom"></span>
+                                    <span>Male</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="female" required>
+                                    <span class="radio-custom"></span>
+                                    <span>Female</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="prefer-not-to-say" required>
+                                    <span class="radio-custom"></span>
+                                    <span>Prefer not to say</span>
+                                </label>
+                            </div>
+                            <span class="error-message" id="gender-error"></span>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="button" class="btn-back" onclick="previousStep()">
+                                <i class="fas fa-arrow-left"></i> Back
+                            </button>
+                            <button type="button" class="btn-next" onclick="nextStep()">
+                                Next <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Preferences -->
+                    <div class="form-step" id="step3">
+                        <h3 class="step-title">Preferences & Terms</h3>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">
+                                    Sign up for emails to get updates from Nike on products, offers, and your Member benefits
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">
+                                    I agree to Nike's <a href="#" class="link">Privacy Policy</a> and 
+                                    <a href="#" class="link">Terms of Use</a>
+                                </span>
+                            </label>
+                            <span class="error-message" id="terms-error"></span>
+                        </div>
+
+                        <div class="member-benefits">
+                            <h4>Nike Member Benefits</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Member-exclusive products</li>
+                                <li><i class="fas fa-check"></i> Free shipping on orders $150+</li>
+                                <li><i class="fas fa-check"></i> Special offers and promotions</li>
+                                <li><i class="fas fa-check"></i> Birthday rewards</li>
+                                <li><i class="fas fa-check"></i> Nike Training Club access</li>
+                            </ul>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="button" class="btn-back" onclick="previousStep()">
+                                <i class="fas fa-arrow-left"></i> Back
+                            </button>
+                            <button type="submit" class="btn-submit" id="submitBtn">
+                                <span class="btn-text">Create Account</span>
+                                <span class="btn-loader" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Footer -->
+                <div class="form-footer">
+                    <p>Already a Member? <a href="../HTML/LogIn.html" class="login-link">Sign In</a></p>
+                </div>
+
+                <!-- Back to Store -->
+                <button class="btn-store" onclick="window.location.href='../index.html'">
+                    <i class="fas fa-arrow-left"></i> Back to Store
+                </button>
+            </div>
+        </div>
+
+        <!-- Right Side - Image -->
+        <div class="signup-image-section">
+            <div class="image-content">
+                <div class="floating-card">
+                    <h3>Join the Nike Family</h3>
+                    <p>Over 100 million members worldwide</p>
+                </div>
+                <img src="/Photo/nike-signup-bg.jpg" alt="Nike Athletes">
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="success-icon">
+                <svg viewBox="0 0 52 52">
+                    <circle cx="26" cy="26" r="25" fill="none" stroke="#000" stroke-width="2"/>
+                    <path fill="none" stroke="#000" stroke-width="3" d="M14 27l7 7 16-16"/>
+                </svg>
+            </div>
+            <h2>Welcome to Nike!</h2>
+            <p>Your account has been created successfully.</p>
+            <button class="btn-modal" onclick="redirectToLogin()">Continue to Login</button>
+        </div>
+    </div>
+
+    <script src="../Js/SignIn.js"></script>
+</body>
+</html>

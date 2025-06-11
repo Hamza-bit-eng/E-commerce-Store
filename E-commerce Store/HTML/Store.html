@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Store - Shop All Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/Store.css">
+  <link rel="icon" type="image/png" href="../Photo/logo-Nike-New.png">
+
+</head>
+<body>
+
+
+    <!--==========================-->
+          <!-- loding page -->
+    <!--==========================-->   
+
+
+    <div class="loader">
+        <div class="hourglassBackground">
+            <div class="hourglassContainer">
+                <div class="hourglassCurves"></div>
+                <div class="hourglassCapTop"></div>
+                <div class="hourglassGlassTop"></div>
+                <div class="hourglassSand"></div>
+                <div class="hourglassSandStream"></div>
+                <div class="hourglassCapBottom"></div>
+                <div class="hourglassGlass"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--==========================-->
+         <!-- Header section -->
+    <!--==========================--> 
+
+     <!-- Header -->
+    <header class="store-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/Photo/Logo_NIKE.svg.png" alt="Nike Logo">
+            </div>
+            <nav class="store-nav">
+                <a href="../index.html">Home</a>
+                <a href="store.html" class="active">Store</a>
+                <a href="../HTML/Best.html">Best Sellers</a>
+                <a href="../HTML/Contact.html">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <button class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                    <span class="badge">0</span>
+                </button>
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="badge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--==========================-->
+         <!-- Hero section -->
+    <!--==========================-->
+
+    <!-- Store Hero -->
+    <section class="store-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-word">SHOP</span>
+                <span class="title-word">ALL</span>
+                <span class="title-word">NIKE</span>
+            </h1>
+            <p class="hero-subtitle">Find Your Perfect Fit</p>
+        </div>
+        <div class="hero-background">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </section>
+
+
+
+    <!--==========================-->
+         <!-- Filter section -->
+    <!--==========================-->
+
+     <!-- Filter Bar -->
+    <section class="filter-bar">
+        <div class="container">
+            <div class="filter-left">
+                <button class="filter-toggle">
+                    <i class="fas fa-filter"></i>
+                    Filters
+                </button>
+                <div class="active-filters"></div>
+            </div>
+            <div class="filter-right">
+                <span class="product-count">324 Products</span>
+                <select class="sort-select">
+                    <option value="featured">Featured</option>
+                    <option value="newest">Newest</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+
+    <!--==========================-->
+        <!-- Main section -->
+    <!--==========================-->
+
+     <!-- Main Store Content -->
+    <main class="store-main">
+        <div class="container">
+            <div class="store-layout">
+                <!-- Sidebar Filters -->
+                <aside class="filters-sidebar">
+                    <div class="filter-section">
+                        <h3 class="filter-title">Categories</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" value="shoes">
+                                <span class="checkbox-custom"></span>
+                                <span>Shoes</span>
+                                <span class="count">(156)</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="clothing">
+                                <span class="checkbox-custom"></span>
+                                <span>Clothing</span>
+                                <span class="count">(89)</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="accessories">
+                                <span class="checkbox-custom"></span>
+                                <span>Accessories</span>
+                                <span class="count">(45)</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="equipment">
+                                <span class="checkbox-custom"></span>
+                                <span>Equipment</span>
+                                <span class="count">(34)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3 class="filter-title">Price Range</h3>
+                        <div class="price-range-slider">
+                            <div class="slider-track">
+                                <div class="slider-range"></div>
+                                <input type="range" min="0" max="500" value="50" class="slider-min">
+                                <input type="range" min="0" max="500" value="350" class="slider-max">
+                            </div>
+                            <div class="price-inputs">
+                                <div class="price-input">
+                                    <span>$</span>
+                                    <input type="number" value="50" min="0" max="500" class="min-price">
+                                </div>
+                                <span>—</span>
+                                <div class="price-input">
+                                    <span>$</span>
+                                    <input type="number" value="350" min="0" max="500" class="max-price">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3 class="filter-title">Size</h3>
+                        <div class="size-grid">
+                            <button class="size-option">7</button>
+                            <button class="size-option">7.5</button>
+                            <button class="size-option">8</button>
+                            <button class="size-option active">8.5</button>
+                            <button class="size-option">9</button>
+                            <button class="size-option">9.5</button>
+                            <button class="size-option">10</button>
+                            <button class="size-option">10.5</button>
+                            <button class="size-option">11</button>
+                            <button class="size-option">11.5</button>
+                            <button class="size-option">12</button>
+                            <button class="size-option">13</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3 class="filter-title">Color</h3>
+                        <div class="color-options">
+                            <button class="color-option" data-color="black" style="background: #000"></button>
+                            <button class="color-option" data-color="white" style="background: #fff"></button>
+                            <button class="color-option" data-color="red" style="background: #d43f21"></button>
+                            <button class="color-option" data-color="blue" style="background: #0066cc"></button>
+                            <button class="color-option" data-color="green" style="background: #2ecc71"></button>
+                            <button class="color-option" data-color="yellow" style="background: #f1c40f"></button>
+                            <button class="color-option" data-color="orange" style="background: #ff6b35"></button>
+                            <button class="color-option" data-color="purple" style="background: #8e44ad"></button>
+                        </div>
+                    </div>
+
+                    <button class="clear-filters">Clear All Filters</button>
+                </aside>
+
+                <!-- Products Grid -->
+                <section class="products-section">
+                    <div class="products-grid">
+                        <!-- Product Card 1 -->
+                        <article class="product-card" data-aos="fade-up">
+                            <div class="product-image-container">
+                                <img src="/Photo/Prodect-1.png" alt="Nike Air Max 270" class="product-img">
+                                <img src="/Photo/Prodect-1.png" alt="Nike Air Max 270" class="product-img-hover">
+                                <button class="quick-add">Quick Add +</button>
+                                <button class="wishlist-toggle"><i class="far fa-heart"></i></button>
+                                <span class="product-badge new">New</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Nike Air Max 270</h3>
+                                <p class="product-category">Men's Shoes</p>
+                                <div class="product-price">
+                                    <span class="price">L.E 2,500</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #000"></span>
+                                    <span class="color-dot" style="background: #fff"></span>
+                                    <span class="color-dot" style="background: #d43f21"></span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product Card 2 -->
+                        <article class="product-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="product-image-container">
+                                <img src="/Photo/Prodect-2.png" alt="Nike React Infinity" class="product-img">
+                                <img src="/Photo/Prodect-2.png" alt="Nike React Infinity" class="product-img-hover">
+                                <button class="quick-add">Quick Add +</button>
+                                <button class="wishlist-toggle"><i class="far fa-heart"></i></button>
+                                <span class="product-badge sale">-25%</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Nike React Infinity Run</h3>
+                                <p class="product-category">Women's Running Shoes</p>
+                                <div class="product-price">
+                                    <span class="price">L.E 7,520</span>
+                                    <span class="original-price">L.E 4,160</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #e91e63"></span>
+                                    <span class="color-dot" style="background: #9c27b0"></span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product Card 3 -->
+                        <article class="product-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="product-image-container">
+                                <img src="/Photo/Prodect-3.png" alt="Nike Blazer Mid" class="product-img">
+                                <img src="/Photo/Prodect-3.png" alt="Nike Blazer Mid" class="product-img-hover">
+                                <button class="quick-add">Quick Add +</button>
+                                <button class="wishlist-toggle"><i class="far fa-heart"></i></button>
+                                <span class="product-badge hot">Hot</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Nike Blazer Mid '77</h3>
+                                <p class="product-category">Lifestyle Shoes</p>
+                                <div class="product-price">
+                                    <span class="price">L.E 8,500</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span class="color-dot" style="background: #fff"></span>
+                                    <span class="color-dot" style="background: #3498db"></span>
+                                    <span class="color-dot" style="background: #2ecc71"></span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Add more product cards as needed -->
+                        <!-- Product cards 4-12 would follow the same pattern -->
+                    </div>
+
+                    <!-- Load More -->
+                    <div class="load-more-container">
+                        <button class="load-more-btn">
+                            <span>Load More Products</span>
+                            <div class="load-more-spinner"></div>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="../Js/Store.js"></script>
+</body>
+</html>

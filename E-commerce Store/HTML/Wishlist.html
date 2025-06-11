@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Store - My Wishlist</title>
+    <link rel="stylesheet" href="../CSS/Wishlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="../Photo/logo-Nike-New.png">
+</head>
+<body>
+    <div class="wishlist-container">
+        <header class="wishlist-header">
+            <div class="header-top">
+                <button class="back-btn" onclick="window.location.href='../index.html'">
+                    <i class="fas fa-arrow-left"></i> Back to Store
+                </button>
+                <button class="cart-btn" onclick="window.location.href='../HTML/Cart.html'">
+                    <i class="fas fa-shopping-cart"></i> Cart
+                    <span id="cart-badge" class="badge">0</span>
+                </button>
+            </div>
+            <div class="header-main">
+                <h1><i class="far fa-heart"></i> My Wishlist</h1>
+                <p class="wishlist-subtitle">
+                    <span id="wishlist-count">0</span> items saved
+                </p>
+            </div>
+        </header>
+
+        <div class="wishlist-actions" id="wishlist-actions">
+            <button class="btn-clear-all" onclick="clearAllWishlist()">
+                <i class="fas fa-trash-alt"></i> Clear All
+            </button>
+            <button class="btn-add-all-cart" onclick="addAllToCart()">
+                <i class="fas fa-shopping-bag"></i> Add All to Cart
+            </button>
+        </div>
+
+        <div class="wishlist-content" id="wishlist-content">
+            <!-- Wishlist items will be dynamically inserted here -->
+        </div>
+
+        <div class="wishlist-empty" id="empty-wishlist">
+            <div class="empty-icon">
+                <i class="far fa-heart"></i>
+            </div>
+            <h2>Your wishlist is empty</h2>
+            <p>Save your favorite items here to buy them later</p>
+            <button class="btn-continue-shopping" onclick="window.location.href='../index.html'">
+                <i class="fas fa-arrow-left"></i> Continue Shopping
+            </button>
+        </div>
+    </div>
+
+    <!-- Toast notification container -->
+    <div id="toast-container"></div>
+
+    <script src="../Js/Wishlist.js"></script>
+</body>
+</html>

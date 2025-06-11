@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Store - Best Sellers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/Best.css">
+    <link rel="icon" type="image/png" href="../Photo/logo-Nike-New.png">
+</head>
+<body>
+
+    <!--==========================-->
+          <!-- loding page -->
+    <!--==========================-->   
+
+
+    <div class="loader">
+        <div class="hourglassBackground">
+            <div class="hourglassContainer">
+                <div class="hourglassCurves"></div>
+                <div class="hourglassCapTop"></div>
+                <div class="hourglassGlassTop"></div>
+                <div class="hourglassSand"></div>
+                <div class="hourglassSandStream"></div>
+                <div class="hourglassCapBottom"></div>
+                <div class="hourglassGlass"></div>
+            </div>
+        </div>
+    </div>
+
+
+     <!--==========================-->
+          <!-- Header Section -->
+    <!--==========================--> 
+
+
+     <!-- Header -->
+    <header class="best-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/Photo/Logo_NIKE.svg.png" alt="Nike Logo">
+            </div>
+            <nav class="best-nav">
+                <a href="../index.html">Home</a>
+                <a href="../HTML/Store.html">Store</a>
+                <a href="../HTML/Best.html" class="active">Best Sellers</a>
+                <a href="../HTML/Contact.html">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <button class="wishlist-btn">
+                    <i class="far fa-heart"></i>
+                    <span class="badge">3</span>
+                </button>
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="badge">2</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+     <!-- Hero Section -->
+    <section class="best-hero">
+        <div class="hero-bg">
+            <div class="floating-shoe shoe-1">
+                <img src="/Photo/logo-Nike-New.png" alt="Nike Shoe">
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">
+                    <span class="word">BEST</span>
+                    <span class="word">SELLERS</span>
+                </span>
+                <span class="title-line">
+                    <span class="word">OF</span>
+                    <span class="word">2024</span>
+                </span>
+            </h1>
+            <p class="hero-subtitle">Discover what everyone's wearing</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1000">500</span>
+                    <span class="stat-label">Products Sold Daily</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="98">50</span>
+                    <span class="stat-label">% Customer Satisfaction</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50">50</span>
+                    <span class="stat-label">+ Countries</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Pills -->
+    <section class="filter-pills">
+        <div class="container">
+            <div class="pills-wrapper">
+                <button class="pill active" data-filter="all">All Products</button>
+                <button class="pill" data-filter="shoes">Shoes</button>
+                <button class="pill" data-filter="clothing">Clothing</button>
+                <button class="pill" data-filter="accessories">Accessories</button>
+                <button class="pill" data-filter="new">New Arrivals</button>
+                <button class="pill" data-filter="sale">On Sale</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Grid -->
+    <section class="best-sellers-section">
+        <div class="container">
+            <div class="products-container">
+                <!-- Product 1 - Rank #1 -->
+                <div class="best-product" data-category="shoes" data-rank="1">
+                    <div class="rank-badge">
+                        <span class="rank-number">#1</span>
+                        <span class="rank-text">Best Seller</span>
+                    </div>
+                    
+                    <div class="product-image-wrapper">
+                        <div class="product-360">
+                            <img src="/Photo/B1 (1).png" alt="Nike Air Max 2024" class="product-img active">
+                            <img src="/Photo/B2.png" alt="Nike Air Max 2024" class="product-img">
+                            <img src="/Photo/B4.png" alt="Nike Air Max 2024" class="product-img">
+                            <img src="/Photo/B4.png" alt="Nike Air Max 2024" class="product-img">
+                        </div>
+                        <div class="view-360">
+                            <i class="fas fa-sync"></i> 360° View
+                        </div>
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                    
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h3 class="product-name">Nike Air Max 2024</h3>
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        
+                        <p class="product-category">Men's Running Shoes</p>
+                        
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-text">4.8 (2,341 reviews)</span>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">L.E 5,280</span>
+                            <span class="sold-count">5.2K sold this week</span>
+                        </div>
+                        
+                        <div class="product-colors">
+                            <span class="color-option active" style="background: #000"></span>
+                            <span class="color-option" style="background: #0066cc"></span>
+                            <span class="color-option" style="background: #d43f21"></span>
+                            <span class="more-colors">+3</span>
+                        </div>
+                        
+                        <div class="product-sizes">
+                            <select class="size-select">
+                                <option>Select Size</option>
+                                <option>US 7</option>
+                                <option>US 7.5</option>
+                                <option>US 8</option>
+                                <option>US 8.5</option>
+                                <option>US 9</option>
+                                <option>US 9.5</option>
+                                <option>US 10</option>
+                            </select>
+                        </div>
+                        
+                        <button class="add-to-cart-btn">
+                            <span class="btn-text">Add to Cart</span>
+                            <span class="btn-icon"><i class="fas fa-shopping-bag"></i></span>
+                        </button>
+                        
+                        <div class="stock-indicator">
+                            <div class="stock-bar">
+                                <div class="stock-fill" style="width: 25%"></div>
+                            </div>
+                            <span class="stock-text">Only 15 left in stock!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 - Rank #2 -->
+                <div class="best-product" data-category="shoes" data-rank="2">
+                    <div class="rank-badge silver">
+                        <span class="rank-number">#2</span>
+                        <span class="rank-text">Best Seller</span>
+                    </div>
+                    
+                    <div class="product-image-wrapper">
+                        <div class="product-360">
+                            <img src="/Photo/Prodect-2.png" alt="Nike React Infinity" class="product-img active">
+                        </div>
+                        <div class="sale-tag">-25% OFF</div>
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                    
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h3 class="product-name">Nike React Infinity</h3>
+                            <button class="favorite-btn active">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                        
+                        <p class="product-category">Man's Shoes</p>
+                        
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0 (1,892 reviews)</span>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">L.E 7,500</span>
+                            <span class="original-price">L.E 10,500</span>
+                            <span class="sold-count">3.8K sold this week</span>
+                        </div>
+                        
+                        <div class="product-colors">
+                            <span class="color-option active" style="background: #e91e63"></span>
+                            <span class="color-option" style="background: #9c27b0"></span>
+                            <span class="color-option" style="background: #3f51b5"></span>
+                        </div>
+                        
+                        <div class="product-sizes">
+                            <select class="size-select">
+                                <option>Select Size</option>
+                                <option>US 5</option>
+                                <option>US 5.5</option>
+                                <option>US 6</option>
+                                <option>US 6.5</option>
+                                <option>US 7</option>
+                                <option>US 7.5</option>
+                                <option>US 8</option>
+                            </select>
+                        </div>
+                        
+                        <button class="add-to-cart-btn">
+                            <span class="btn-text">Add to Cart</span>
+                            <span class="btn-icon"><i class="fas fa-shopping-bag"></i></span>
+                        </button>
+                    </div>
+                </div>
+
+
+                 <!-- Product 3 - Rank #3 -->
+                <div class="best-product" data-category="shoes" data-rank="2">
+                    <div class="rank-badge silver">
+                        <span class="rank-number">#3</span>
+                        <span class="rank-text">Best Seller</span>
+                    </div>
+                    
+                    <div class="product-image-wrapper">
+                        <div class="product-360">
+                            <img src="/Photo/traning.jpg" alt="Nike React Infinity" class="product-img active">
+                        </div>
+                        <div class="sale-tag">-25% OFF</div>
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                    
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h3 class="product-name">Nike Hoodi</h3>
+                            <button class="favorite-btn active">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                        
+                        <p class="product-category">Man's Shoes</p>
+                        
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0 (1,892 reviews)</span>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">L.E 7,500</span>
+                            <span class="original-price">L.E 10,500</span>
+                            <span class="sold-count">3.8K sold this week</span>
+                        </div>
+                        
+                        <div class="product-colors">
+                            <span class="color-option active" style="background: #e91e63"></span>
+                            <span class="color-option" style="background: #9c27b0"></span>
+                            <span class="color-option" style="background: #3f51b5"></span>
+                        </div>
+                        
+                        <div class="product-sizes">
+                            <select class="size-select">
+                                <option>Select Size</option>
+                                <option>US 5</option>
+                                <option>US 5.5</option>
+                                <option>US 6</option>
+                                <option>US 6.5</option>
+                                <option>US 7</option>
+                                <option>US 7.5</option>
+                                <option>US 8</option>
+                            </select>
+                        </div>
+                        
+                        <button class="add-to-cart-btn">
+                            <span class="btn-text">Add to Cart</span>
+                            <span class="btn-icon"><i class="fas fa-shopping-bag"></i></span>
+                        </button>
+                    </div>
+                </div>
+
+
+            
+                <!-- More products would follow the same pattern -->
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more-section">
+                <button class="load-more-btn">
+                    <span>Show More Best Sellers</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="trending-section">
+        <div class="container">
+            <h2 class="section-title">Trending This Week</h2>
+            
+            <div class="trending-carousel">
+                <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                
+                                <div class="carousel-track">
+                    <div class="trending-item">
+                        <img src="/Photo/Prodect-1.png" alt="Trending 1">
+                        <div class="trend-info">
+                            <h4>Nike Dunk Low</h4>
+                            <p>+245% sales increase</p>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <img src="/Photo/Prodect-2.png" alt="Trending 2">
+                        <div class="trend-info">
+                            <h4>Air Jordan 1</h4>
+                            <p>+189% sales increase</p>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <img src="/Photo/Prodect-3.png" alt="Trending 3">
+                        <div class="trend-info">
+                            <h4>Nike Blazer</h4>
+                            <p>+156% sales increase</p>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <img src="/Photo/Nike Blazer Mid.webp" alt="Trending 4">
+                        <div class="trend-info">
+                            <h4>Air Force 1</h4>
+                            <p>+134% sales increase</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">What Customers Say</h2>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="/Photo/customer-1.jpg" alt="Customer">
+                        <div class="reviewer-info">
+                            <h4>Sarah Johnson</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <span class="verified-badge">✓ Verified Purchase</span>
+                    </div>
+                    <p class="review-text">"Best running shoes I've ever owned! The comfort is unmatched and they look amazing."</p>
+                    <div class="review-product">
+                        <img src="/Photo/Customer-buy.jpg" alt="Product">
+                        <span>Nike Air Max 2024</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="/Photo/customer-2.jpg" alt="Customer">
+                        <div class="reviewer-info">
+                            <h4>Mike Chen</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <span class="verified-badge">✓ Verified Purchase</span>
+                    </div>
+                    <p class="review-text">"The React cushioning is incredible. I can run for hours without any discomfort."</p>
+                    <div class="review-product">
+                        <img src="/Photo/Customer-buy-2.jpg" alt="Product">
+                        <span>Nike React Infinity</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="/Photo/customer-3.jpg" alt="Customer">
+                        <div class="reviewer-info">
+                            <h4>Emma Davis</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <span class="verified-badge">✓ Verified Purchase</span>
+                    </div>
+                    <p class="review-text">"Perfect fit, amazing quality. The Tech Fleece is so soft and warm!"</p>
+                    <div class="review-product">
+                        <img src="/Photo/Customer-buy-3.jpg" alt="Product">
+                        <span>Nike Tech Fleece</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../Js/Best.js"></script>
+</body>
+</html>

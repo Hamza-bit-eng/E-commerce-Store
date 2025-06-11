@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Store - Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/Contact.css">
+</head>
+<body>
+
+    <!--==========================-->
+          <!-- loding page -->
+    <!--==========================-->   
+
+
+    <div class="loader">
+        <div class="hourglassBackground">
+            <div class="hourglassContainer">
+                <div class="hourglassCurves"></div>
+                <div class="hourglassCapTop"></div>
+                <div class="hourglassGlassTop"></div>
+                <div class="hourglassSand"></div>
+                <div class="hourglassSandStream"></div>
+                <div class="hourglassCapBottom"></div>
+                <div class="hourglassGlass"></div>
+            </div>
+        </div>
+    </div>
+
+
+     <!--==========================-->
+         <!-- Header section -->
+    <!--==========================--> 
+
+    <!-- Header -->
+    <header class="contact-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/Photo/Logo_NIKE.svg.png" alt="Nike Logo">
+            </div>
+            <nav class="contact-nav">
+                <a href="../index.html">Home</a>
+                <a href="../HTML/Store.html">Store</a>
+                <a href="../HTML/Best.html">Best Sellers</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="letter">G</span>
+                <span class="letter">E</span>
+                <span class="letter">T</span>
+                <span class="space"></span>
+                <span class="letter">I</span>
+                <span class="letter">N</span>
+                <span class="space"></span>
+                <span class="letter">T</span>
+                <span class="letter">O</span>
+                <span class="letter">U</span>
+                <span class="letter">C</span>
+                <span class="letter">H</span>
+            </h1>
+            <p class="hero-subtitle">We're here to help with anything you need</p>
+        </div>
+        <div class="scroll-down">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="methods-grid">
+                <!-- Phone Card -->
+                <div class="method-card" data-aos="fade-up">
+                    <div class="card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Mon-Fri from 8am to 6pm</p>
+                    <a href="tel:+1234567890" class="contact-link">+1 (234) 567-890</a>
+                </div>
+
+                <!-- Email Card -->
+                <div class="method-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>We'll respond within 24 hours</p>
+                    <a href="mailto:support@nike.com" class="contact-link">support@nike.com</a>
+                </div>
+
+                <!-- Chat Card -->
+                <div class="method-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Available 24/7</p>
+                    <button class="contact-link chat-btn">Start Chat</button>
+                </div>
+
+                <!-- Location Card -->
+                <div class="method-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Find a store near you</p>
+                    <button class="contact-link">Store Locator</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-left">
+                    <h2 class="form-title">Send us a Message</h2>
+                    <p class="form-subtitle">Fill out the form and we'll get back to you as soon as possible</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="firstName" required>
+                                <label for="firstName">First Name</label>
+                                <span class="input-border"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="lastName" required>
+                                <label for="lastName">Last Name</label>
+                                <span class="input-border"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email Address</label>
+                            <span class="input-border"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <span class="input-border"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="order">Order Status</option>
+                                <option value="product">Product Information</option>
+                                <option value="return">Returns & Exchanges</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="subject" class="select-label">How can we help?</label>
+                            <span class="input-border"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="input-border"></span>
+                            <span class="char-count">0/500</span>
+                        </div>
+                        
+                        <div class="form-group file-upload">
+                            <input type="file" id="attachment" multiple>
+                            <label for="attachment" class="file-label">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <span>Attach files (optional)</span>
+                            </label>
+                            <div class="file-list"></div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <div class="btn-loader"></div>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="form-right">
+                    <div class="info-card">
+                        <h3>Need Quick Help?</h3>
+                        <div class="faq-list">
+                            <details class="faq-item">
+                                <summary>How do I track my order?</summary>
+                                <p>You can track your order by logging into your account or using the tracking number sent to your email.</p>
+                            </details>
+                            <details class="faq-item">
+                                <summary>What is your return policy?</summary>
+                                <p>We offer free returns within 30 days of purchase. Items must be unworn and in original packaging.</p>
+                            </details>
+                            <details class="faq-item">
+                                <summary>How long does shipping take?</summary>
+                                <p>Standard shipping takes 3-5 business days. Express shipping is available for 1-2 business days.</p>
+                            </details>
+                        </div>
+                    </div>
+                    
+                    <div class="social-card">
+                        <h3>Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link" data-social="facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" data-social="twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" data-social="instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" data-social="youtube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Success Modal -->
+    <div class="success-modal" id="successModal">
+        <div class="modal-content">
+            <div class="success-animation">
+                <svg class="checkmark" viewBox="0 0 52 52">
+                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+            </div>
+            <h2>Message Sent!</h2>
+            <p>Thank you for contacting us. We'll get back to you soon.</p>
+            <button class="modal-close">Close</button>
+        </div>
+    </div>
+
+    <!-- Live Chat Widget -->
+    <div class="chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-comment-dots"></i>
+            <span class="chat-badge">1</span>
+        </button>
+        <div class="chat-window">
+            <div class="chat-header">
+                <h4>Nike Support</h4>
+                <button class="chat-close">&times;</button>
+            </div>
+            <div class="chat-body">
+                <div class="chat-message bot">
+                    <img src="/Photo/bot-avatar.png" alt="Bot">
+                    <p>Hi! How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../Js/Contact.js"></script>
+</body>
+</html>

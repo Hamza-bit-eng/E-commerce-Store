@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="../Photo/logo-Nike-New.png">
+</head>
+<body>
+
+
+    <!--============================-->
+        <!--Header Section Start-->
+    <!--============================-->
+
+
+     <header class="main-header">
+        <div class="header-container">
+            <!-- Logo -->
+           <div class="logo-wrapper">
+             <img src="/Photo/Logo_NIKE.svg.png" alt="Logo" class="nike-logo">
+          </div>
+
+            <!-- Navigation Menu -->
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" data-text="HOME">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="HTML/Store.html" class="nav-link" data-text="STORE">STORE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="HTML/Best.html" class="nav-link" data-text="BEST">BEST</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="HTML/Contact.html" class="nav-link" data-text="CONTACT US">CONTACT US</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Action Items -->
+            <div class="header-actions">
+                <!-- Search Icon -->
+                <button class="action-icon search-icon" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                
+               <!-- Wishlist Icon -->
+                <a href="../HTML/Wishlist.html" class="action-icon wishlist-icon" aria-label="Wishlist">
+                    <i class="far fa-heart"></i>
+                    <span class="icon-badge" data-count="0"></span>
+                </a>
+
+                <!-- Shopping Cart Icon -->
+                <a href="../HTML/Cart.html" class="action-icon cart-icon" aria-label="Shopping Cart">
+                 <!-- Shopping Cart Icon -->
+                <button class="action-icon cart-icon" aria-label="Shopping Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="icon-badge" id="cart-count">0</span>
+                </button>
+                </a>
+
+               <!-- Auth Buttons -->
+                <div class="auth-buttons">
+                    <a href="../HTMl/SignIn.html" class="btn btn-primary">Sign In</a>
+                    <a href="../HTMl/LogIn.html" class="btn btn-secondary">Log In</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+
+        <!-- Search Overlay -->
+        <div class="search-overlay">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for products...">
+                <button class="search-close">&times;</button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--============================-->
+         <!--Home Section Start-->
+    <!--============================-->
+
+     <section class="hero-section">
+         <div class="hero-background">
+            <div class="hero-video">
+                <video autoplay muted loop>
+                    <source src="/videos/hero-video.mp4" type="video/mp4">
+                </video>
+             </div>
+             <div class="hero-overlay"></div>
+         </div>
+
+         <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="word">JUST</span>
+                    <span class="word">DO</span>
+                    <span class="word">IT</span>
+                </h1>
+                <p class="hero-subtitle">Unleash Your Potential</p>
+                <div class="hero-buttons">
+                    <button class="btn-hero primary">Shop Now</button>
+                    <button class="btn-hero secondary">Watch Video</button>
+                </div>
+            </div>
+            <div class="hero-product">
+                <img src="/Photo/Home-3.png" alt="Nike Air Max" class="floating-shoe">
+                <div class="product-info">
+                    <span class="product-tag">New Release</span>
+                    <h3>Nike Air Max 2024</h3>
+                </div>
+            </div>
+        </div>
+
+          <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+     </section>
+
+      <div id="cart-toast" class="cart-toast hidden">Item added to cart!</div>
+
+     <!--============================-->
+         <!-- Featured Products -->
+     <!--============================-->
+
+      <section class="featured-section">
+         <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+            </div>
+
+             <div class="products-grid">
+
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/Photo/About-2.jpg" alt="Nike Air Force 1">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                        <span class="product-badge">New</span>
+                    </div>
+                    <div class="product-details">
+                        <h3>Nike Air Force 1</h3>
+                        <p class="product-category">Men's Shoes</p>
+                        <div class="product-footer">
+                            <span class="price">L.E 2,200</span>
+                             <button class="add-to-cart" 
+                                data-id="Nike Air Force 1"
+                                data-name="Nike Air Force 1"
+                                data-price=" 2200"
+                                data-image="/Photo/About-2.jpg"
+                                data-size="US 10"
+                                data-color="Black">
+                                <i class="fas fa-shopping-bag"></i>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/Photo/Nike React Vision.webp" alt="Nike React">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                        <span class="product-badge hot">Hot</span>
+                    </div>
+                    <div class="product-details">
+                        <h3>Nike React Vision</h3>
+                        <p class="product-category">Women's Shoes</p>
+                        <div class="product-footer">
+                            <span class="price">L.E 4,140</span>
+                            <button class="add-to-cart"
+                            data-id="1"
+                            data-name="Nike React Vision"
+                            data-price="4140"
+                            data-image="/Photo/Nike React Vision.webp">
+                           <i class="fas fa-shopping-bag"></i>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/Photo/Nike Blazer Mid.webp" alt="Nike Blazer">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Nike Blazer Mid</h3>
+                        <p class="product-category">Lifestyle</p>
+                        <div class="product-footer">
+                            <span class="price">L.E 3,500</span>
+                            <button class="add-to-cart" 
+                                data-id="Nike Blazer Mid"
+                                data-name="Nike Blazer Mid"
+                                data-price="3500"
+                                data-image="/Photo/Nike Blazer Mid.webp"
+                                data-size="US 10"
+                                data-color="Black">
+                                <i class="fas fa-shopping-bag"></i>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/Photo/Nike Zoom Pegasus.jpg" alt="Nike Zoom">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                        <span class="product-badge sale">-20%</span>
+                    </div>
+                    <div class="product-details">
+                        <h3>Nike Zoom Pegasus</h3>
+                        <p class="product-category">Running</p>
+                        <div class="product-footer">
+                            <span class="price">
+                                <span class="original-price">L.E 3,500</span>
+                                L.E 2,500
+                            </span>
+                            <button class="add-to-cart" 
+                                data-id="Nike Zoom Pegasus"
+                                data-name="Nike Zoom Pegasus"
+                                data-price="2500"
+                                data-image="/Photo/Nike Zoom Pegasus.jpg"
+                                data-size="US 10"
+                                data-color="Black">
+                                <i class="fas fa-shopping-bag"></i>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/Photo/Air-Gordan.jpg" alt="Nike Zoom">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                        <span class="product-badge sale">-15%</span>
+                    </div>
+                    <div class="product-details">
+                        <h3>Nike Air Gordan</h3>
+                        <p class="product-category">Running</p>
+                        <div class="product-footer">
+                            <span class="price">
+                                <span class="original-price">L.E 7,500</span>
+                                L.E 4,500
+                            </span>
+                             <button class="add-to-cart" 
+                                data-id="Nike Air Gordan"
+                                data-name="Nike Air Gordan"
+                                data-price="4500"
+                                data-image="/Photo/Air-Gordan.jpg"
+                                data-size="US 10"
+                                data-color="Black">
+                                <i class="fas fa-shopping-bag"></i>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product Card 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/Photo/Air-Gordan-Blue.jpg" alt="Nike Zoom">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                        <span class="product-badge sale">-10%</span>
+                    </div>
+                    <div class="product-details">
+                        <h3>Nike Air Gordan Blue</h3>
+                        <p class="product-category">Running</p>
+                        <div class="product-footer">
+                            <span class="price">
+                                <span class="original-price">L.E 6,500</span>
+                                L.E 2,400
+                            </span>
+                              <button class="add-to-cart" 
+                                data-id="Nike Air Gordan Blue"
+                                data-name="Nike Air Gordan Blue"
+                                data-price="2400"
+                                data-image="/Photo/Air-Gordan-Blue.jpg"
+                                data-size="US 10"
+                                data-color="Black">
+                                <i class="fas fa-shopping-bag"></i>
+                        </button>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--============================-->
+        <!-- Categories Section -->
+    <!--============================-->
+
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            
+            <div class="categories-grid">
+                <div class="category-card" data-category="men">
+                    <div class="category-image">
+                        <img src="/Photo/Man.jpg" alt="Men's Collection">
+                        <div class="category-overlay">
+                            <h3>Men's</h3>
+                            <button class="category-btn">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="women">
+                    <div class="category-image">
+                        <img src="/Photo/Weman.jpg" alt="Women's Collection">
+                        <div class="category-overlay">
+                            <h3>Women's</h3>
+                            <button class="category-btn">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="kids">
+                    <div class="category-image">
+                        <img src="/Photo/Kid.jpg" alt="Kids' Collection">
+                        <div class="category-overlay">
+                            <h3>Kids'</h3>
+                            <button class="category-btn">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--============================-->
+          <!-- Parallax Banner -->
+    <!--============================-->
+
+    <section class="parallax-banner">
+        <div class="parallax-content">
+            <h2 class="parallax-title">Nike Air Technology</h2>
+            <p class="parallax-text">Feel the comfort. Own the style.</p>
+            <button class="btn-discover">Discover More</button>
+        </div>
+    </section>
+
+
+    <!--============================-->
+            <!-- Newsletter -->
+    <!--============================-->
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay in the Loop</h2>
+                <p>Get the latest Nike news and exclusive offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-toast" class="cart-toast">Item added to cart!</div>
+
+
+     <script src="main.js"></script>
+</body>
+</html>
